@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-box {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .head {
+            color: blue;
+            text-align: center;
+        }
+
+        .box {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .inp {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .box-1 {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .box-2 {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .d-1 {
+            text-align: right;
+        }
+
+        .reg {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .table-1 {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .section-box {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+<div class="main-box">
+    <h1 class="head">Registration form</h1>
+    <form>
+        <table class="table-1">
+            <tr>
+                <td class="box">First Name:</td>
+                <td><input type="text" class="inp"></td>
+            </tr>
+            <tr>
+                <td class="box">Last Name:</td>
+                <td><input type="text" class="inp"></td>
+            </tr>
+            <tr>
+                <td class="box">Email:</td>
+                <td><input type="email" class="inp"></td>
+            </tr>
+            <tr>
+                <td class="box">Password:</td>
+                <td><input type="password" class="inp"></td>
+            </tr>
+            <tr>
+                <td class="box">Re-Password:</td>
+                <td><input type="password" class="inp"></td>
+            </tr>
+            <tr>
+                <td class="box-1">Gender:</td>
+                <td>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td class="box">Age:</td>
+                <td><input class="inp" type="number"></td>
+            </tr>
+            <tr>
+                <td class="box">Address:</td>
+                <td><input type="text" class="box-2"></td>
+            </tr>
+            <tr>
+                <td class="box">State:</td>
+                <td><input type="text" class="inp"></td>
+            </tr>
+            <tr>
+                <td class="box">Country:</td>
+                <td>
+                    <label for="location"></label>
+                    <select name="location" id="location">
+                        <option>Choose your Country</option>
+                        <option value="India">India</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Israel">Israel</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="box">Languages known:</td>
+                <td>
+                    <div class="section-box">
+                        <input type="checkbox" id="english">
+                        <label for="english">English</label>
+                        <input type="checkbox" id="telugu">
+                        <label for="telugu">Telugu</label>
+                        <input type="checkbox" id="kannada">
+                        <label for="kannada">Kannada</label>
+                        <input type="checkbox" id="hindi">
+                        <label for="hindi">Hindi</label>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <input type="checkbox">
+    <label>Hearby I declare that all the given details are true</label>
+
+    <div class="section-box">
+        <div class="d-1">
+            <label>Login in to</label>
+            <a href="https://ethnus.com/">Ethnus</a>
+            <label>website</label>
+        </div>
+    </div>
+    <br>
+    <input type="submit" value="Register" class="reg">
+</div>
+</body>
+</html>
